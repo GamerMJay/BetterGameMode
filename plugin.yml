@@ -21,11 +21,11 @@ gm3:
  permission: gm3.use
 
 permissions:
-gm0.use:
- default: op
-gm1.use:
- default: op
-gm2.use:
- default: op
-gm3.use:
- default: op
+  gm0.use:
+    default: op
+  gm1.use:
+    default: op
+  gm2.use:
+    default: op
+  gm3.use:
+    default: op
