@@ -2,6 +2,7 @@ name: BetterGameMode
 main: GamerMJay\BetterGM\Main
 api: [4.0.0]
 description: Easy GameMode plugin
+version 1.0.0
 
 commands:
 gm0:
