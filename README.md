@@ -26,6 +26,6 @@ Owner: GamerMJay2008
 
 Helper: /
 
-Icon: /
+Icon: leMimic
 
 Discord-Tag: `GamerMJay#6158`
