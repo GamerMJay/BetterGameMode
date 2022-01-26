@@ -1,0 +1,2 @@
+# BetterGM
+GameMode System 
