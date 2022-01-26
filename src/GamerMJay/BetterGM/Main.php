@@ -1,6 +1,6 @@
 <?php
 
-namespace GamerMJay2008\BetterGM;
+namespace GamerMJay\BetterGM;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
