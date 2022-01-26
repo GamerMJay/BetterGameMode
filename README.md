@@ -21,6 +21,7 @@ You've found a Bug?
 ### License:
 This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay2008!
 
+### Helpers:
 Owner: GamerMJay2008
 
 Helper: /
