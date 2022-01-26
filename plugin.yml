@@ -1,8 +1,10 @@
 name: BetterGameMode
 main: GamerMJay\BetterGM\Main
+author: GamerMJay2008
 api: [4.0.0]
 description: Easy GameMode plugin
-version 1.0.0
+version: 1.0.0
+website: https://github.com/GamerMJay2008/BetterGM
 
 commands:
 gm0:
