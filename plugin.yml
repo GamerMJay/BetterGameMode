@@ -1,0 +1,32 @@
+name: BetterGameMode
+main: GamerMJay\BetterGM\Main
+api: [4.0.0]
+description: Easy GameMode plugin
+
+commands:
+gm0:
+ description: Go to survival mode
+ permission: gm0.use
+ permission-message: §cYou do not have permission to use this command!
+gm1:
+ description: Go to creative mode
+ permission: gm1.use
+ permission-message: §cYou do not have permission to use this command!
+gm2:
+ description: Go to adventure mode
+ permission: gm2.use
+ permission-message: §cYou do not have permission to use this command!
+gm3:
+ description: Go to spectator mode
+ permission: gm3.use
+ permission-message: §cYou do not have permission to use this command!
+
+permissions:
+gm0.use
+ default: op
+gm1.use 
+ default: op
+gm2.use
+ default: op
+gm3.use
+ default: op
