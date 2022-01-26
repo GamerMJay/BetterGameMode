@@ -18,7 +18,7 @@ class main extends PluginBase
                 return false;
             }
             $sender->setGamemode(GameMode::SURVIVAL());
-            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour game mode has been changed to Survival");
+            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Survival");
             return false;
         }
         if ($cmd->getName() === "gm1") {
@@ -27,7 +27,7 @@ class main extends PluginBase
                 return false;
             }
             $sender->setGamemode(GameMode::CREATIVE());
-            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour game mode has been changed to Creative");
+            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Creative");
             return false;
         }
         if ($cmd->getName() === "gm2") {
@@ -36,7 +36,7 @@ class main extends PluginBase
                 return false;
             }
             $sender->setGamemode(GameMode::ADVENTURE());
-            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour game mode has been changed to Adventure");
+            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Adventure");
             return false;
         }
         if ($cmd->getName() === "gm3") {
@@ -45,7 +45,7 @@ class main extends PluginBase
                 return false;
             }
             $sender->setGamemode(GameMode::SPECTATOR());
-            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour game mode has been changed to Spectator");
+            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Spectator");
             return false;
         }
         return true;
