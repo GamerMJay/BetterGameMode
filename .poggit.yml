@@ -5,4 +5,5 @@ branches:
 projects:
   BetterGM:
     path: ""
+    icon: "icon.png"
 ...
