@@ -19,7 +19,7 @@ class Main extends PluginBase
                 return false;
             }
             $sender->setGamemode(GameMode::CREATIVE());
-            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Survival");
+            $message = $config->get("gm1");
             return false;
         }
         
