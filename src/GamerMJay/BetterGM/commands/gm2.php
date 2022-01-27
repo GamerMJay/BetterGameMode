@@ -13,13 +13,13 @@ class Main extends PluginBase
 {
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool 
     {
-        if ($cmd->getName() === "gm2") {
-            if (!$sender->hasPermission("gm2.use")) {
+        if ($cmd->getName() === "gm0") {
+            if (!$sender->hasPermission("gm0.use")) {
                 $sender->sendMessage("§cYou do not have permission to use this command!");
                 return false;
             }
-            $sender->setGamemode(GameMode::ADVENTURE());
-            $sender->sendMessage("§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Adventure");
+            $sender->setGamemode(GameMode::SURVIVAL());
+            $message = $config->get("gm0");
             return false;
         }
         
