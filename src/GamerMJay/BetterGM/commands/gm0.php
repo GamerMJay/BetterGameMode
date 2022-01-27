@@ -19,7 +19,7 @@ class Main extends PluginBase
                 return false;
             }
             $sender->setGamemode(GameMode::SURVIVAL());
-            $message = $config->get("gm0");
+            $message = $config->get("gamemode0-message");
             return false;
         }
         
