@@ -19,7 +19,7 @@ class Main extends PluginBase
                 return false;
             }
             $sender->setGamemode(GameMode::CREATIVE());
-            $message = $config->get("gm1");
+            $message = $config->get("gamemode1-message");
             return false;
         }
         
