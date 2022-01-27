@@ -22,7 +22,7 @@ You've found a Bug?
 This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay2008!
 
 ### Helpers:
-Owner: GamerMJay2008
+Owner: GamerMJay2008 (https://github.com/GamerMJay2008)
 
 Helper: /
 
