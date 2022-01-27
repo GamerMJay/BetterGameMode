@@ -2,7 +2,7 @@
 # BetterGameMode - V1.0.0  
 
 ### TODOs
-- UI/Form
+- UI/Form (Cooming soon)
 
 ### Report Bug
 You've found a Bug?
