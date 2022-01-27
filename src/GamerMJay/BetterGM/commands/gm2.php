@@ -18,7 +18,7 @@ class Main extends PluginBase
                 $sender->sendMessage("§cYou do not have permission to use this command!");
                 return false;
             }
-            $sender->setGamemode(GameMode::SURVIVAL());
+            $sender->setGamemode(GameMode::ADVENTURE());
             $message = $config->get("gm0");
             return false;
         }
