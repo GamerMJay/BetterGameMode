@@ -3,7 +3,7 @@
 
 ### TODOs
 - UI/Form (Cooming soon)
-
+- config.yml
 ### Report Bug
 You've found a Bug?
 - Go to [Issues](https://github.com/GamerMJay2008/BetterGM/issues)
