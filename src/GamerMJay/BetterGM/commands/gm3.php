@@ -19,7 +19,7 @@ class Main extends PluginBase
                 return false;
             }
             $sender->setGamemode(GameMode:: SPECTATOR());
-            $message = $config->get("gm3");
+            $message = $config->get("gamemode3-message");
             return false;
         }
         
