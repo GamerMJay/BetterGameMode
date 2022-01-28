@@ -18,7 +18,7 @@ class gm1 extends PluginBase
                 $sender->sendMessage("§cYou do not have permission to use this command!");
                 return false;
             }
-            $sender->setGamemode(GameMode::CREATIVE());
+            $sender->setGamemode(GameMode:: CREATIVE());
             $message = $config->get("gamemode1-message");
             return false;
         }
