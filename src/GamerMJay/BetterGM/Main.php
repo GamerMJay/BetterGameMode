@@ -23,7 +23,7 @@ class Main extends PluginBase {
         Server::getInstance()->getCommandMap()->registerAll('BetterGM',
 
             [
-                 new gm0(),
+                new gm0(),
 
                 new gm1(),
 
