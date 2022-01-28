@@ -15,13 +15,10 @@ class Main extends PluginBase {
     public function onEnable(): void {
 
         $this->saveResource('config.yml');
-
-        Server::getInstance()->getCommandMap()->registerAll('BetterGM',[
-            new gm0("gm0.use"),
-            new gm1("gm1.use"),
-            new gm2("gm2.use"),
-            new gm3("gm3.use")
-            ]);
+		$this->getServer()->getCommandMap()->register("gm0", new gm0($this));
+		$this->getServer()->getCommandMap()->register("gm1", new gm1($this));
+		$this->getServer()->getCommandMap()->register("gm2", new gm2($this));
+                $this->getServer()->getCommandMap()->register("gm3", new gm3($this));
 
     }
 }
