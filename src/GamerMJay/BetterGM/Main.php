@@ -1,10 +1,6 @@
 <?php
 
-
-
 namespace GamerMJay\BetterGM;
-
-
 
 use GamerMJay\BetterGM\commands\gm0;
 use GamerMJay\BetterGM\commands\gm1;
