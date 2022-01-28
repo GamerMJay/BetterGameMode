@@ -1,11 +1,11 @@
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/RuF5gxRNfQ)
-# BetterGameMode - V2.0.0  
+# BetterGameMode - V3.0.0  
 
 #### New
 added config.yml
+added UI/Form
 
 ### TODOs
-- UI/Form (Cooming soon)
 ### Report Bug
 You've found a Bug?
 - Go to [Issues](https://github.com/GamerMJay2008/BetterGM/issues)
