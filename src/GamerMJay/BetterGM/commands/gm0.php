@@ -9,7 +9,7 @@ use pocketmine\player\GameMode;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 
-class Main extends PluginBase
+class gm0 extends PluginBase
 {
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool 
     {
