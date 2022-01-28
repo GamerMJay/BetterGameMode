@@ -19,13 +19,15 @@ class Main extends PluginBase {
         Server::getInstance()->getCommandMap()->registerAll('BetterGM',
 
             [
-                new gm0(),
 
-                new gm1(),
 
-                new gm2(),
+                 new gm0(),
 
-                new gm3(),
+                 new gm1(),
+
+                 new gm2(),
+
+                 new gm3(),
 
             ]);
 
