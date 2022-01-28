@@ -21,6 +21,7 @@ class gm0 extends PluginBase
             }
             $sender->setGamemode(GameMode:: SURVIVAL());
             $message = $config->get("gamemode0-message");
+            $sender->sendMessage($message);
             return false;
         }
         
