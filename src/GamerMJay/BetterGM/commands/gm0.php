@@ -18,7 +18,7 @@ class gm0 extends PluginBase
                 $sender->sendMessage("§cYou do not have permission to use this command!");
                 return false;
             }
-            $sender->setGamemode(GameMode::SURVIVAL());
+            $sender->setGamemode(GameMode:: SURVIVAL());
             $message = $config->get("gamemode0-message");
             return false;
         }
