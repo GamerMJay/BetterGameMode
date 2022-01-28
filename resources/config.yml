@@ -1,4 +1,4 @@
-# BetterMute V1.0.0 by GamerMJay208, licensed under Apache License 2.0!
+# BetterGameMode V1.0.0 by GamerMJay208, licensed under Apache License 2.0!
 #######
 # Messages
 
@@ -6,5 +6,3 @@ gamemode0-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been chan
 gamemode1-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Creative"
 gamemode2-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Adventure"
 gamemode3-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Spectator"
-
-COOMING SOON!
