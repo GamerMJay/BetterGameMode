@@ -16,7 +16,7 @@ use pocketmine\tile\Tile;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 use pocketmine\Server;
-use pocketmine\Player;
+use pocketmine\player\Player;
 
 class Main extends PluginBase {
 
