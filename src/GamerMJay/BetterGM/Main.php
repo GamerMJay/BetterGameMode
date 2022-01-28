@@ -17,15 +17,10 @@ class Main extends PluginBase {
         $this->saveResource('config.yml');
 
         Server::getInstance()->getCommandMap()->registerAll('BetterGM',[
-
-                 new gm0(),
-
-                 new gm1(),
-
-                 new gm2(),
-
-                 new gm3(),
-
+            new gm0("gm0.use"),
+            new gm1("gm1.use"),
+            new gm2("gm2.use"),
+            new gm3("gm3.use")
             ]);
 
     }
