@@ -1,25 +1,11 @@
 name: BetterGameMode
-main: GamerMJay\BetterGM\Main
+main: GamerMJay\BetterGameMode\Main
 author: GamerMJay2008
-api: [4.0.0]
+api: 4.0.0
 description: Easy GameMode plugin
-version: 1.0.0
-website: https://github.com/GamerMJay2008/BetterGM
+version: 2.0.0
+website: https://github.com/GamerMJay2008/BetterGameMode
 
-
-commands:
-  gm0:
-    description: "Go to survival mode"
-    permission: gm0.use
-  gm1:
-    description: "Go to creative mode"
-    permission: gm1.use
-  gm2:
-    description: "Go to adventure mode"
-    permission: gm2.use
-  gm3:
-    description: "Go to spectator mode"
-    permission: gm3.use
 
 permissions:
   gm0.use:
