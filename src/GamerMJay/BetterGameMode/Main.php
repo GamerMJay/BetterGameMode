@@ -2,14 +2,12 @@
 
 namespace GamerMJay\BetterGameMode;
 
-#commands
-
-
 #pocketmine
 use GamerMJay\BetterGameMode\commands\gm0;
 use GamerMJay\BetterGameMode\commands\gm1;
 use GamerMJay\BetterGameMode\commands\gm2;
 use GamerMJay\BetterGameMode\commands\gm3;
+use GamerMJay\BetterGameMode\commands\gmform;
 use pocketmine\command\Command;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
@@ -29,5 +27,6 @@ class Main extends PluginBase {
         $this->getServer()->getCommandMap()->register("gm1", new gm1($this));
         $this->getServer()->getCommandMap()->register("gm2", new gm2($this));
         $this->getServer()->getCommandMap()->register("gm3", new gm3($this));
+        $this->getServer()->getCommandMap()->register("gm", new gmform($this));
     }
 }

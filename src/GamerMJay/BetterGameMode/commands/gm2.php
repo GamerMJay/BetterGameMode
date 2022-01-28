@@ -24,11 +24,13 @@ class gm2 extends Command implements PluginOwned
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
         if(!$sender instanceof Player){
-            $sender->sendMessage("§cRun the command ingame");
+            $sender->sendMessage($this->plugin->config->get("run-ingame"));
             return false;
         }
+       
         if(!$sender->hasPermission("gm2.use")){
-            $sender->sendMessage("§cNo perms");
+            $sender->sendMessage($this->plugin->config->get("no-permission"));
+            return false;
         }
         $sender->setGamemode(GameMode::ADVENTURE());
         $sender->sendMessage($this->plugin->config->get("gamemode2-message"));

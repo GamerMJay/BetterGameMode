@@ -13,7 +13,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\plugin\PluginOwned;
 use pocketmine\utils\Config;
 
-class gm3 extends Command implements PluginOwned
+class gm3  extends Command implements PluginOwned
 {
     public function __construct(Main $plugin)
     {
@@ -24,13 +24,15 @@ class gm3 extends Command implements PluginOwned
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
         if(!$sender instanceof Player){
-            $sender->sendMessage("§cRun the command ingame");
+            $sender->sendMessage($this->plugin->config->get("run-ingame"));
             return false;
         }
+       
         if(!$sender->hasPermission("gm3.use")){
-            $sender->sendMessage("§cNo perms");
+            $sender->sendMessage($this->plugin->config->get("no-permission"));
+            return false;
         }
-        $sender->setGamemode(GameMode::SURVIVAL());
+        $sender->setGamemode(GameMode::SPECTATOR());
         $sender->sendMessage($this->plugin->config->get("gamemode3-message"));
     }
 

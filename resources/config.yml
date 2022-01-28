@@ -1,8 +1,23 @@
-# BetterGameMode V2.0.0 by GamerMJay208, licensed under Apache License 2.0!
+# BetterGameMode V3.0.0 by GamerMJay208, licensed under Apache License 2.0!
 #######
-# Messages
 
+# Messages
+no-permission: "§6§lBetterGameMode §r§8» §cyou have no permission!"
+run-ingame: "§6§lBetterGameMode §r§8» §crun this command ingame!"
 gamemode0-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Survival"
 gamemode1-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Creative"
 gamemode2-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Adventure"
 gamemode3-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Spectator"
+
+# Form/UI
+form-title: "§6§lBetterGameMode"
+description: "§gyou can edit all in config.yml §cplugin by §bGamerMJay"
+gm0-button: "§2GameMode 0"
+gm1-button: "§2GameMode 1"
+gm2-button: "§2GameMode 2"
+gm3-button: "§2GameMode 3"
+gamemodeform0-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Survival"
+gamemodeform1-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Creative"
+gamemodeform2-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Adventure"
+gamemodeform3-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Spectator"
+

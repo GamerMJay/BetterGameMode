@@ -24,11 +24,13 @@ class gm1 extends Command implements PluginOwned
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
         if(!$sender instanceof Player){
-            $sender->sendMessage("§cRun the command ingame");
+            $sender->sendMessage($this->plugin->config->get("run-ingame"));
             return false;
         }
+       
         if(!$sender->hasPermission("gm1.use")){
-            $sender->sendMessage("§cNo perms");
+            $sender->sendMessage($this->plugin->config->get("no-permission"));
+            return false;
         }
         $sender->setGamemode(GameMode::CREATIVE());
         $sender->sendMessage($this->plugin->config->get("gamemode1-message"));
