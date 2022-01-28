@@ -18,7 +18,7 @@ class gm2 extends PluginBase
                 $sender->sendMessage("§cYou do not have permission to use this command!");
                 return false;
             }
-            $sender->setGamemode(GameMode::ADVENTURE());
+            $sender->setGamemode(GameMode:: ADVENTURE());
             $message = $config->get("gamemode2-message");
             return false;
         }
