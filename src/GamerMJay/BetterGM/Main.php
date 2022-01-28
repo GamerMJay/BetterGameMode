@@ -22,10 +22,5 @@ class Main extends PluginBase {
 
     public function onEnable(): void {
 
-	$this->getServer()->getCommandMap()->register("gm0", new gm0($this));
-        $this->getServer()->getCommandMap()->register("gm1", new gm1($this));
-	$this->getServer()->getCommandMap()->register("gm2", new gm2($this));
-        $this->getServer()->getCommandMap()->register("gm3", new gm3($this));
-
     }
 }
