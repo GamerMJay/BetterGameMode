@@ -8,8 +8,8 @@ added UI/Form
 ### TODOs
 ### Report Bug
 You've found a Bug?
-- Go to [Issues](https://github.com/GamerMJay2008/BetterGM/issues)
-- Click on [New Issue](https://github.com/GamerMJay2008/BetterGM/issues/new/choose)
+- Go to [Issues](https://github.com/GamerMJay/BetterGameMode/issues)
+- Click on [New Issue](https://github.com/GamerMJay/BetterGameMode/issues/new/choose)
 - Write your bug with all Informations that you have down
 
 ### Commands
@@ -24,7 +24,7 @@ You've found a Bug?
 This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay2008!
 
 ### Helpers:
-Owner: GamerMJay2008 (https://github.com/GamerMJay2008)
+Owner: GamerMJay (https://github.com/GamerMJay)
 
 Helper: RealTheKuhlMc (https://github.com/RealTheKuhlMc)
 
