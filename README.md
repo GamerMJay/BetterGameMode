@@ -6,6 +6,8 @@ added config.yml
 added UI/Form
 
 ### TODOs
+/gm1 (user name)
+
 ### Report Bug
 You've found a Bug?
 - Go to [Issues](https://github.com/GamerMJay/BetterGameMode/issues)
