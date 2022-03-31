@@ -1,4 +1,4 @@
-# BetterGameMode V3.0.0 by GamerMJay, licensed under Apache License 2.0!
+# BetterGameMode V4.0.0 by GamerMJay, licensed under Apache License 2.0
 #######
 
 # Messages
@@ -8,6 +8,9 @@ gamemode0-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been chan
 gamemode1-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Creative"
 gamemode2-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Adventure"
 gamemode3-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Spectator"
+player-gm: "§6§lBetterGameMode §r§8» §aYour GameMode has been changed"
+sender-gm: "§6§lBetterGameMode §r§8» §aYou have updated the GameMode from the user"
+player-notfound: "§6§lBetterGameMode §r§8» §cPlayer was not found"
 
 # Form/UI
 form-title: "§6§lBetterGameMode"

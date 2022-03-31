@@ -12,8 +12,9 @@ use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\plugin\PluginOwned;
 use pocketmine\utils\Config;
+use pocketmine\Server;
 
-class gm3  extends Command implements PluginOwned
+class gm3 extends Command implements PluginOwned
 {
     public function __construct(Main $plugin)
     {
@@ -27,13 +28,23 @@ class gm3  extends Command implements PluginOwned
             $sender->sendMessage($this->plugin->config->get("run-ingame"));
             return false;
         }
-       
-        if(!$sender->hasPermission("gm3.use")){
-            $sender->sendMessage($this->plugin->config->get("no-permission"));
-            return false;
+        if (isset($args[0])) {
+            $target = Server::getInstance()->getPlayerByPrefix($args[0]);
+            if ($target instanceof Player) {
+                $target->setGamemode(GameMode::SPECTATOR());
+                $target->sendMessage($this->plugin->config->get("player-gm"));
+                $sender->sendMessage($this->plugin->config->get("sender-gm"));
+            } else {
+                $sender->sendMessage($this->plugin->config->get("player-notfound"));
+            }
+        } else {
+            if(!$sender->hasPermission("gm3.use")){
+                $sender->sendMessage($this->plugin->config->get("no-permission"));
+                return false;
+            }
+            $sender->setGamemode(GameMode::SPECTATOR());
+            $sender->sendMessage($this->plugin->config->get("gamemode3-message"));
         }
-        $sender->setGamemode(GameMode::SPECTATOR());
-        $sender->sendMessage($this->plugin->config->get("gamemode3-message"));
     }
 
     public function getOwningPlugin(): Plugin
