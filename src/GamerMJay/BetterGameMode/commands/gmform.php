@@ -19,10 +19,9 @@ class gmform extends Command implements PluginOwned
 {
     public function __construct(Main $plugin)
     {
-        parent::__construct("gm", "Open the GameMode Menu", "", []);
-        $this->setPermission("gm.use");
         $this->plugin = $plugin;
-    }
+		parent::__construct($this->plugin->getConfig()->get("gm-command"), $this->plugin->getConfig()->get("gm-description"), "/gm", [""]);        
+        $this->setPermission("gm.use");    }
 
 
     public function onGMUI(Player $player){

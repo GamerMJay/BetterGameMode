@@ -1,4 +1,4 @@
-# BetterGameMode V4.0.0 by GamerMJay, licensed under Apache License 2.0
+# BetterGameMode V5.0.0 by GamerMJay, licensed under Apache License 2.0
 #######
 
 # Messages
@@ -9,12 +9,12 @@ gamemode1-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been chan
 gamemode2-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Adventure"
 gamemode3-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Spectator"
 player-gm: "§6§lBetterGameMode §r§8» §aYour GameMode has been changed"
-sender-gm: "§6§lBetterGameMode §r§8» §aYou have updated the GameMode from the user"
+sender-gm: "§6§lBetterGameMode §r§8» §aYou have updated the GameMode from the user {name}"
 player-notfound: "§6§lBetterGameMode §r§8» §cPlayer was not found"
 
 # Form/UI
 form-title: "§6§lBetterGameMode"
-description: "§gyou can edit all in config.yml §cplugin by §bGamerMJay"
+description: "§6Chosse your GameMode!"
 gm0-button: "§2GameMode 0"
 gm1-button: "§2GameMode 1"
 gm2-button: "§2GameMode 2"
@@ -24,3 +24,16 @@ gamemodeform1-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been 
 gamemodeform2-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Adventure"
 gamemodeform3-message: "§6§lBetterGameMode §r§8» §aYour gamemode has been changed to Spectator"
 
+# Commands
+gm0-command: "gm0"
+gm1-command: "gm1"
+gm2-command: "gm2"
+gm3-command: "gm3"
+gm-command: "gm"
+
+# Descriptions
+gm0-description: "Go to survival mode"
+gm1-description: "Go to creative mode"
+gm2-description: "Go to adventure mode"
+gm3-description: "Go to specator mode"
+gm-description: "Open the GameMode Menu"

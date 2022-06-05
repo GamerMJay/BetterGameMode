@@ -1,8 +1,10 @@
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/RuF5gxRNfQ)
-# BetterGameMode - V4.0.0  
+# BetterGameMode - V5.0.0  
 
 #### New
-/gm1 (user name)
+When updating a player's GameMode, the name now displays.
+change commands 
+change descriptions
 
 ### Report Bug
 You've found a Bug?

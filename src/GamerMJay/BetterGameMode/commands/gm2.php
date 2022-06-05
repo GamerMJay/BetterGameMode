@@ -18,9 +18,9 @@ class gm2 extends Command implements PluginOwned
 {
     public function __construct(Main $plugin)
     {
-        parent::__construct("gm2", "Go to adventure mode", null, []);
-        $this->setPermission("gm2.use");
         $this->plugin = $plugin;
+		parent::__construct($this->plugin->getConfig()->get("gm2-command"), $this->plugin->getConfig()->get("gm2-description"), "/gm2", [""]);    
+        $this->setPermission("gm2.use");
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
@@ -33,7 +33,9 @@ class gm2 extends Command implements PluginOwned
             if ($target instanceof Player) {
                 $target->setGamemode(GameMode::ADVENTURE());
                 $target->sendMessage($this->plugin->config->get("player-gm"));
-                $sender->sendMessage($this->plugin->config->get("sender-gm"));
+                $msg = $this->plugin->config->get("sender-gm");
+                $msg = str_replace("{name}", $target->getName(), $msg);
+                $sender->sendMessage($msg);
             } else {
                 $sender->sendMessage($this->plugin->config->get("player-notfound"));
             }

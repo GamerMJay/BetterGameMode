@@ -18,21 +18,23 @@ class gm0 extends Command implements PluginOwned
 {
     public function __construct(Main $plugin)
     {
-        parent::__construct("gm0", "Go to survival mode", null, []);
-        $this->setPermission("gm0.use");
         $this->plugin = $plugin;
+		parent::__construct($this->plugin->getConfig()->get("gm0-command"), $this->plugin->getConfig()->get("gm0-description"), "/gm0", [""]);
+        $this->setPermission("gm0.use");    
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
         if(!$sender instanceof Player){
             $sender->sendMessage($this->plugin->config->get("run-ingame"));
             return false;
-        }        if (isset($args[0])) {
-            $target = Server::getInstance()->getPlayerByPrefix($args[0]);
-            if ($target instanceof Player) {
+        }       
+        if (isset($args[0])) {
+            if (($target = Server::getInstance()->getPlayerByPrefix($args[0])) instanceof Player) {
                 $target->setGamemode(GameMode::SURVIVAL());
                 $target->sendMessage($this->plugin->config->get("player-gm"));
-                $sender->sendMessage($this->plugin->config->get("sender-gm"));
+                $msg = $this->plugin->config->get("sender-gm");
+                $msg = str_replace("{name}", $target->getName(), $msg);
+                $sender->sendMessage($msg);
             } else {
                 $sender->sendMessage($this->plugin->config->get("player-notfound"));
             }
