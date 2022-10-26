@@ -29,6 +29,6 @@ Owner: [GamerMJay](https://github.com/GamerMJay)
 
 Helper: [RealTheKuhlMc](https://github.com/RealTheKuhlMc)
 
-Icon: [leMimic](http://github.com/leMimic)
+Icon: [JvstinXz](http://github.com/JvstinXz)
 
 Discord-Tag: `GamerMJay#6158`
