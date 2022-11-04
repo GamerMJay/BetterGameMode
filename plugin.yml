@@ -5,17 +5,17 @@ author: GamerMJay
 api:
 - 4.0.0
 description: Easy GameMode plugin
-version: 5.0.0
+version: 5.1.0
 website: https://github.com/GamerMJay/BetterGameMode
 permissions:
-  gm.use:
+  bettergameode.gmform:
     default: op
-  gm0.use:
+  bettergameode.gm0:
     default: op
-  gm1.use:
+  bettergameode.gm1:
     default: op
-  gm2.use:
+  bettergameode.gm2:
     default: op
-  gm3.use:
+  bettergameode.gm3:
     default: op
 ...

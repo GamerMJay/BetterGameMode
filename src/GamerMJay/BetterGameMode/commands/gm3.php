@@ -20,7 +20,7 @@ class gm3 extends Command implements PluginOwned
     {
         $this->plugin = $plugin;
 		parent::__construct($this->plugin->getConfig()->get("gm3-command"), $this->plugin->getConfig()->get("gm3-description"), "/gm3", [""]);
-        $this->setPermission("gm3.use");
+        $this->setPermission("bettergameode.gm3");
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
@@ -40,7 +40,7 @@ class gm3 extends Command implements PluginOwned
                 $sender->sendMessage($this->plugin->config->get("player-notfound"));
             }
         } else {
-            if(!$sender->hasPermission("gm3.use")){
+            if(!$sender->hasPermission("bettergameode.gm3")){
                 $sender->sendMessage($this->plugin->config->get("no-permission"));
                 return false;
             }
