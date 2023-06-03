@@ -16,11 +16,13 @@ use pocketmine\Server;
 
 class gm1 extends Command implements PluginOwned
 {
+    private $plugin;
+
     public function __construct(Main $plugin)
     {
         $this->plugin = $plugin;
 		parent::__construct($this->plugin->getConfig()->get("gm1-command"), $this->plugin->getConfig()->get("gm1-description"), "/gm1", [""]);
-        $this->setPermission("bettergameode.gm1");    
+        $this->setPermission("bettergamemode.gm1");    
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
@@ -40,7 +42,7 @@ class gm1 extends Command implements PluginOwned
                 $sender->sendMessage($this->plugin->config->get("player-notfound"));
             }
         } else {
-            if(!$sender->hasPermission("bettergameode.gm1")){
+            if(!$sender->hasPermission("bettergamemode.gm1")){
                 $sender->sendMessage($this->plugin->config->get("no-permission"));
                 return false;
             }

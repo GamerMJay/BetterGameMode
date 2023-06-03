@@ -17,14 +17,14 @@ use pocketmine\utils\Config;
 
 class gmform extends Command implements PluginOwned
 {
+    private $plugin;
+
     public function __construct(Main $plugin)
     {
         $this->plugin = $plugin;
 		parent::__construct($this->plugin->getConfig()->get("gm-command"), $this->plugin->getConfig()->get("gm-description"), "/gm", [""]);        
-        $this->setPermission("bettergameode.gmform");    
+        $this->setPermission("bettergamemode.gmform");    
     }
-
-
     public function onGMUI(Player $player){
         $form = new SimpleForm(function (Player $player, int $data = null){
             if($data === null){
@@ -33,7 +33,7 @@ class gmform extends Command implements PluginOwned
             { $sender = $player;
                 switch ($data) {
                     case 0:
-                        if (!$sender->hasPermission("bettergameode.gm0")) {
+                        if (!$sender->hasPermission("bettergamemode.gm0")) {
                             $sender->sendMessage($this->plugin->config->get("nopermission"));
                         } else {
                             $sender->setGamemode(GameMode::SURVIVAL());
@@ -41,7 +41,7 @@ class gmform extends Command implements PluginOwned
                         }
                         break;
                     case 1:
-                        if (!$sender->hasPermission("bettergameode.gm1")) {
+                        if (!$sender->hasPermission("bettergamemode.gm1")) {
                             $sender->sendMessage($this->plugin->config->get("nopermission"));
                         } else {
                             $sender->setGamemode(GameMode::CREATIVE());
@@ -49,7 +49,7 @@ class gmform extends Command implements PluginOwned
                         }
                         break;
                     case 2:
-                        if (!$sender->hasPermission("bettergameode.gm2")) {
+                        if (!$sender->hasPermission("bettergamemode.gm2")) {
                             $sender->sendMessage($this->plugin->config->get("nopermission"));
                         } else {
                             $sender->setGamemode(GameMode::ADVENTURE());
@@ -57,7 +57,7 @@ class gmform extends Command implements PluginOwned
                         }
                         break;
                     case 3:
-                        if (!$sender->hasPermission("bettergameode.gm3")) {
+                        if (!$sender->hasPermission("bettergamemode.gm3")) {
                             $sender->sendMessage($this->plugin->config->get("nopermission"));
                         } else {
                             $sender->setGamemode(GameMode::SPECTATOR());
@@ -84,7 +84,7 @@ class gmform extends Command implements PluginOwned
             $sender->sendMessage($this->plugin->config->get("run-ingame"));
             return false;
         }
-        if (!$sender->hasPermission("bettergameode.gmform")){
+        if (!$sender->hasPermission("bettergamemode.gmform")){
              $sender->sendMessage($this->plugin->config->get("no-permission"));
             return false;
         }

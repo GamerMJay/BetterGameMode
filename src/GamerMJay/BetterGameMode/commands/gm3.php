@@ -16,11 +16,13 @@ use pocketmine\Server;
 
 class gm3 extends Command implements PluginOwned
 {
+    private $plugin;
+
     public function __construct(Main $plugin)
     {
         $this->plugin = $plugin;
 		parent::__construct($this->plugin->getConfig()->get("gm3-command"), $this->plugin->getConfig()->get("gm3-description"), "/gm3", [""]);
-        $this->setPermission("bettergameode.gm3");
+        $this->setPermission("bettergamemode.gm3");
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {

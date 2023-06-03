@@ -1,8 +1,9 @@
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/RuF5gxRNfQ)
-# BetterGameMode - V5.1.0  
+# BetterGameMode - V5.1.1 
 
 #### New
-Permissions updated
+Updated to PM5
+Permission fix 
 
 ### Report Bug
 You've found a Bug?
