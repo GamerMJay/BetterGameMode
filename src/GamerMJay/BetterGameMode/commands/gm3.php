@@ -42,7 +42,7 @@ class gm3 extends Command implements PluginOwned
                 $sender->sendMessage($this->plugin->config->get("player-notfound"));
             }
         } else {
-            if(!$sender->hasPermission("bettergameode.gm3")){
+            if(!$sender->hasPermission("bettergamemode.gm3")){
                 $sender->sendMessage($this->plugin->config->get("no-permission"));
                 return false;
             }
