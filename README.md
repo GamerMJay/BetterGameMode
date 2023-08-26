@@ -30,4 +30,4 @@ Helper: [RealTheKuhlMc](https://github.com/RealTheKuhlMc)
 
 Icon: [JvstinXz](http://github.com/JvstinXz)
 
-Discord-Tag: `GamerMJay#6158`
+Discord-Tag: `GamerMJay`
